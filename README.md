@@ -21,7 +21,7 @@ The raw dataset has 1025 rows, but 723 of them are duplicates left over from res
 # Results:
 BEST model: XGBoost (after hyperparameter tuning)
 
- |Metric|Test Set (61 patients, held out)| Cross-validation (50 folds)|
+ |Metric|Test Set (61 patients, held out)|Cross-validation (50 folds)|
  |---||---||---|
  |Accuracy|0.738|0.848 ± 0.012
  |Precision|0.758|0.843 ± 0.016
