@@ -23,11 +23,11 @@ BEST model: XGBoost (after hyperparameter tuning)
 
  |Metric|Test Set (61 patients, held out)|Cross-validation (50 folds)|
  |---||---||---|
- |Accuracy|0.738|0.848 ± 0.012
- |Precision|0.758|0.843 ± 0.016
- |Recall|0.758|0.861 ± 0.018
- |F1|0.758|0.850 ± 0.012
- |ROC-AUC|0.849|0.924 ± 0.008
+ |Accuracy|0.738|0.848 ± 0.012|
+ |Precision|0.758|0.843 ± 0.016|
+ |Recall|0.758|0.861 ± 0.018|
+ |F1|0.758|0.850 ± 0.012|
+ |ROC-AUC|0.849|0.924 ± 0.008|
 
 |Metric|Test Set (61 patients, held out)|Cross-validation (50 folds)|
 |---|---|---|
