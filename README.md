@@ -28,13 +28,13 @@ BEST model: XGBoost (after hyperparameter tuning)
   F1	                              0.758	                        0.850 ± 0.012
   ROC-AUC                         	0.849	                        0.924 ± 0.008
 
-# XGBoost was not statistically significantly better than Logistic Regression (paired t-test on F1 across 50 folds, p = 0.499), so both are reported rather than treating the CV ranking as conclusive.
+1. XGBoost was not statistically significantly better than Logistic Regression (paired t-test on F1 across 50 folds, p = 0.499), so both are reported rather than treating the CV ranking as conclusive.
 
-# Fairness Check: Recall gap between sexes is 0.146 (female recall 0.846, male recall 0.700), comparable performance. The gap between age groups is larger: recall 0.857 for younger patients vs. 0.583 for older patients (split at the median age), a gap of 0.274. Each subgroup only has 15030 patients in the test set, so this is reported as a limitation worth flagging, not a statistically confirmed result.
+2. Fairness Check: Recall gap between sexes is 0.146 (female recall 0.846, male recall 0.700), comparable performance. The gap between age groups is larger: recall 0.857 for younger patients vs. 0.583 for older patients (split at the median age), a gap of 0.274. Each subgroup only has 15030 patients in the test set, so this is reported as a limitation worth flagging, not a statistically confirmed result.
 
-# Error Analysis: 45 of 61 test patients were classified correctly. Of the 16 errors, 8 were false negatives (missed disease), and 8 were false positives. The single worst error was a false positive that the model was 99.9% confident about.
+3. Error Analysis: 45 of 61 test patients were classified correctly. Of the 16 errors, 8 were false negatives (missed disease), and 8 were false positives. The single worst error was a false positive that the model was 99.9% confident about.
 
-# Threshold Tuning: At the default 0.5 cutoff, there were 8 false negatives and 8 false positives. Shifting to the F1-optimal threshold (0.11) reduced false negatives to 6 (at the cost of 1 more false positive). The F2-optimal threshold (0.06), which places greater weight on recall, reduced false negatives to 5 but increased false positives to 11. 
+4. Threshold Tuning: At the default 0.5 cutoff, there were 8 false negatives and 8 false positives. Shifting to the F1-optimal threshold (0.11) reduced false negatives to 6 (at the cost of 1 more false positive). The F2-optimal threshold (0.06), which places greater weight on recall, reduced false negatives to 5 but increased false positives to 11. 
 
 # Limitations
 Only 302 unique patients after removing duplicates, so results, especially the subgroup fairness numbers, are based on 15-30 patients per group.
