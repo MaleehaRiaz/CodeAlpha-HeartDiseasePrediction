@@ -25,9 +25,9 @@ BEST model: XGBoost (after hyperparameter tuning)
  |---|                |---|                                     |---|
  |Accuracy	           |            0.738                        |       0.848 ± 0.012
  |Precision           |           	0.758	                       |       0.843 ± 0.016
- |Recall              |          	0.758	                        |       0.861 ± 0.018
- |F1	                 |         0.758	                          |       0.850 ± 0.012
- |ROC-AUC             |       	0.849	                           |       0.924 ± 0.008
+ |Recall              |          	 0.758	                       |       0.861 ± 0.018
+ |F1	                 |            0.758	                       |       0.850 ± 0.012
+ |ROC-AUC             |           	0.849	                       |       0.924 ± 0.008
 
 1. XGBoost was not statistically significantly better than Logistic Regression (paired t-test on F1 across 50 folds, p = 0.499), so both are reported rather than treating the CV ranking as conclusive.
 
